@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Homework:Box</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  const red = document.getElementById('red')
+  const blue = document.getElementById('blue')
+  const green = document.getElementById('green')
+  green.addEventListener('click', () => {
+    blue.classList.toggle('special-class')
+    green.classList.toggle('special-class2')
+    red.classList.toggle('special-class2')
+  })
+</script>
